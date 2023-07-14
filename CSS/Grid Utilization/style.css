@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+    border-top: 1px solid #777;
+}
+
+.footer .btn {
+    margin-right: .5rem;
+}
+
+.footer .btn:last-child {
+    margin-right: initial;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    font-size: inherit;
+    border-radius: .3rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: #1ca;
+}
+
+.btn.btn-primary:hover , .btn.btn-primary:focus {
+    background-color: #C33;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+    background-color: #A11;
+}
+
+
+.item {
+    border: 2px solid #333;
+    background-color: #777;
+    color: yellow;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    /* grid-auto-rows: 250px 150px; */
+    grid-auto-columns: 150px 150px;
+    grid-auto-flow: column;
+    grid-template-areas: 
+      "header header header"
+      "sidebar content .";
+}
+
+.first {
+ grid-area: header;
+}
+
+.second {
+ 
+}
+
+.third {
+  
+}
+
+.fourth {
+
+}
